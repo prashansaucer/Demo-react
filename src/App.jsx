@@ -14,6 +14,19 @@ function App() {
   function sum(a,b){
     return a + b;
   }
+
+  function handleClick() {
+    alert ("Button click ho gaya");
+
+  }
+  function handleClick1() {
+    alert("This is seb");
+  }
+  function handleClick2()  {
+    alert ("This is kela");
+  }
+
+
  return(
   <div>
     <h1>user variable with jsx</h1>
@@ -21,6 +34,9 @@ function App() {
     <h3>{x+y}</h3>
     <h4>{PP()}</h4>
     <h5>example of paramiterized function {sum(x,y)}</h5>
+    <button onClick={handleClick}  > Click me </button>
+    <button onClick={handleClick1}   > Apple</button>
+    <button onClick={handleClick2}   > Banana</button>
   </div>
  )
 }
